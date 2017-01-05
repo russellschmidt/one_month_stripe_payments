@@ -46,6 +46,9 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # for super secret management of credentials
 gem 'figaro'
 
+# add letter opener for handling emails in development
+gem 'letter_opener', group: :development
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
