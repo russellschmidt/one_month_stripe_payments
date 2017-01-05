@@ -49,6 +49,15 @@ gem 'figaro'
 # add letter opener for handling emails in development
 gem 'letter_opener', group: :development
 
+# add ActiveAdmin for easy generation of an admin interface
+gem 'activeadmin', github: 'activeadmin'
+
+# add ActiveAdmin Rails 5 support
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
+# add Devise to support login for ActiveAdmin
+gem 'devise'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
