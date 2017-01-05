@@ -50,7 +50,7 @@ gem 'figaro'
 gem 'letter_opener', group: :development
 
 # add ActiveAdmin for easy generation of an admin interface
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin', '~>1.0.0.pre2'
 
 # add ActiveAdmin Rails 5 support
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'

@@ -34,6 +34,9 @@ Rails.application.configure do
   # send emails using letter_opener gem in dev mode to open emails in a browser
   config.action_mailer.delivery_method = :letter_opener
 
+  # set default actionMailer url for Devise
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000}
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 

@@ -57,6 +57,9 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "one_month_stripe_payments_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
+  # configure actionMailer default url for Devise
+  config.action_mailer.default_url_options = {host: 'http://rs-one-month-stripe-payments.herokuapp.com'}
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false

@@ -22,6 +22,12 @@
 		    </div>
 		    <%= image_tag('header-image.jpg', id: 'content-header-image', alt: 'Learn Growth Hacking') %>
 		  </header>
+		  <% if notice.present? || alert.present? %>
+			  <section id="alerts">
+				  <p class="notice"><%= notice %></p>
+	  	    <p class="alert"><%= alert %></p>
+			  </section>
+		  <% end %>
 	    <%= yield %>
 	  </div>
   </body>
