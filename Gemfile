@@ -25,6 +25,7 @@ gem 'coffee-rails', '~> 4.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 5.0.5'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
@@ -50,19 +51,13 @@ gem 'figaro'
 # add letter opener for handling emails in development
 gem 'letter_opener', group: :development
 
-# add ActiveAdmin for easy generation of an admin interface
-gem 'activeadmin', '~>1.0.0.pre2'
-
-# add ActiveAdmin Rails 5 support
-gem 'inherited_resources', github: 'activeadmin/inherited_resources'
-
-# add Devise to support login for ActiveAdmin
-gem 'devise'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
+
+
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
