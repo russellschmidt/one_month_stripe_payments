@@ -51,13 +51,18 @@ gem 'figaro'
 # add letter opener for handling emails in development
 gem 'letter_opener', group: :development
 
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
+# add ActiveAdmin
+gem 'activeadmin', '~> 1.0.0.pre4'
+
+# add Devise 
+gem 'devise'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
-
-
-
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
