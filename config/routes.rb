@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root 'products#image'
+  root 'products#index'
 
   # support stripe payments through charges
   resources :charges, only: [:new, :create]
