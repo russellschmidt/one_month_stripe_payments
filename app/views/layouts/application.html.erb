@@ -20,7 +20,7 @@
 		    <div id="price-container">
 		      <span class="glyphicon glyphicon-tag" aria-hidden=true></span><span class="price">$4.99</span>
 		    </div>
-		    <%= image_tag('header-image.jpg', id: 'content-header-image', alt: 'Learn Growth Hacking') %>
+		    <%= yield :head %>
 		  </header>
 		  <% if notice.present? || alert.present? %>
 			  <section id="alerts">

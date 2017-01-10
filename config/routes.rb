@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   resources :charges, only: [:new, :create]
 
   # Route for showing products
-  resources :products, only: [:index]
-  
+  resources :products, only: [:index, :show]
+
   # Route for showing purchases
   resources :purchases, only: [:show]
 

@@ -8,6 +8,14 @@ class Product < ApplicationRecord
 	end
 
 	def thumbnail_image_name
-		"product-#{title.split.slice(0..-2).join(" ").gsub(" ","-").downcase}.png"
+		"product-#{image_name}.png"
+	end
+
+	def header_image_name
+		"header-#{image_name}.png"
+	end
+
+	def image_name
+		title.split.slice(0..-2).join(" ").gsub(" ","-").downcase
 	end
 end
