@@ -3,12 +3,12 @@
 	end
 
 	def create
-		product = Product.find_by_sku("GROHACK2")
+		product = Product.find(params[:product_id])
 
 	  customer = Stripe::Customer.create(
 	    :email => params[:stripeEmail],
 	    :source  => params[:stripeToken],
-	    :plan => "GROHACK2"
+	    :plan => "GROHACK2", #you want to change this to a dynamic name for each plan in Stripe
 	  )
 
 	  # charge = Stripe::Charge.create(
